@@ -1,0 +1,15 @@
+version: "3"
+
+tasks:
+  run:fe:dev:
+    cmds:
+      - cd ./frontend && npm run dev
+  run:admin:dev:
+    cmds:
+      - cd ./admin
+  run:be:dev:
+    cmds:
+      - cd ./backend && npm run start:dev
+  # run:dev:
+  #   cmds:
+  #     - task run:be:dev && task run:fe:dev && task run:admin:dev
